@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Calculadora1">
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="336dp"
+        android:layout_height="103dp"
+        android:background="@color/plomoclaro"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TableLayout
+        android:layout_width="352dp"
+        android:layout_height="542dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnOff"
+                android:background="@drawable/btn1fila"
+                android:onClick="clickSalir"
+                android:text="OFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnSingoMasMenos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickMasMenos"
+                android:text="±"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnAC"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/btncolumna4"
+                android:onClick="clickLimpiar"
+                android:text="AC"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/btnSignoBorrarUno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn1fila"
+                android:onClick="clickBorrarUno"
+                android:text="DEL"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnSignoFactorial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickFactorial"
+                android:text="N!"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnSignoPotenciaN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickPotenciaN"
+                android:text="N^X"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnSignoPotencia2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickPotencia2"
+                android:text="N^2"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnSignoPotencia3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickPotencia3"
+                android:text="N^3"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnSeno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickSin"
+                android:text="SIN"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnSignoCoseno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickCoseno"
+                android:text="COS"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnSignoTangente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickTangente"
+                android:text="TAN"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnSignoRaiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickRaiz"
+                android:text="SQRT"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="364dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnNueve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickNueve"
+                android:text="9"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnOcho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickOcho"
+                android:text="8"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnSiete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickSiete"
+                android:text="7"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnSignoDividir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickDividir"
+                android:text="÷"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnSeis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickSeis"
+                android:text="6"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnCinco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickCinco"
+                android:text="5"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnCuatro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickCuatro"
+                android:text="4"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnSignoMultiplicar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickMultiplicar"
+                android:text="*"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnTres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btncolumna4"
+                android:onClick="clickTres"
+                android:text="3"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnDos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickDos"
+                android:text="2"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnUno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickUno"
+                android:text="1"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnSignoResta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickRestar"
+                android:text="-"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnCero"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickCero"
+                android:text="0"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnSignoPunto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickPunto"
+                android:text="."
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnSignoIgual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondearbtn"
+                android:onClick="clickIgual"
+                android:text="="
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnSignoSuma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn1fila"
+                android:onClick="clickSumar"
+                android:text="+"
+                android:textSize="25sp" />
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
